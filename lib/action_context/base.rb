@@ -133,13 +133,13 @@
 #     end
 #   end
 #
-#   class NewUserVariant < Variant
+#   class NewUserVariant < ActionContext::Variant
 #     def save
 #       UserCreationContext.new( resource: user, params: params[ :user_attributes ] ).save && super
 #     end
 #   end
 #
-#   class IncompleteUserVariant < Variant
+#   class IncompleteUserVariant < ActionContext::Variant
 #     validates_associated :user
 #     permit :from_date, to_date, :user_id, { user_attributes: [ :first_name, :last_name, :address ] }
 #
@@ -148,7 +148,7 @@
 #     end
 #   end
 #
-#   class CompleteUserVariant < Variant
+#   class CompleteUserVariant < ActionContext::Variant
 #     permit :from_date, to_date, :user_id
 #     validates_associated :user
 #   end
@@ -202,7 +202,7 @@
 # methods.
 #
 # If you want to dynamically select permitted params, you can
-# override the `#params` method, either in ActionContext::Base or in Variant.
+# override the `#params` method, either in ActionContext::Base or in ActionContext::Variant.
 # 
 # ```ruby
 # class UserSavingContext < ActionContext::Base
