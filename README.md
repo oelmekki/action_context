@@ -14,7 +14,7 @@ like sending mails or updating other resources.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'action_context', git: 'http://gitlab.el-mekki.fr:8081/kik/action_context.git'
+gem 'action_context', github: 'oelmekki/action_context'
 ```
 
 ## The problem
