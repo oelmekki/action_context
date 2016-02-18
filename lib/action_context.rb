@@ -6,6 +6,7 @@ require 'context_constantize'
 require 'action_context/default_behavior'
 require 'action_context/base'
 require 'action_context/variant'
+require 'action_context/errors'
 require 'action_context/helpers'
 require 'action_context/railtie' if defined?( Rails::Railtie )
 
