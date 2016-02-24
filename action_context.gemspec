@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'action_context/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "action_context"
+  spec.name          = "action_context2"
   spec.version       = ActionContext::VERSION
   spec.authors       = ["Olivier El Mekki"]
   spec.email         = ["olivier@el-mekki.com"]
