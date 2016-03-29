@@ -20,7 +20,7 @@ module ActionContext
       end
 
       def resource_class
-        resource_name.to_s.camelize.constantize
+        resource_name.to_s.camelize.context_constantize( self )
       end
 
       def model_name
